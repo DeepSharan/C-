@@ -101,8 +101,22 @@ int main()
       default:
       cout<<"You are a fool :)";
     }
-      
     
+    cout<<"Now we\'ll learn about Arrays.\n In the Arrays we can store number of elements of the same data type.\n Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.\n To declare an Array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store.\n Let\'s store some values in an Array.\n";
+    string Friends[3] = {"Sharandeep", "Harsharan", "Ritish"};
+    cout<< Friends[0];
+    cout<<"To access and change a element we can do \" arrayName[element number] = \"New Element\"; \" \n";
+    cout<<"We can Loop through all the elements of an array, using for loop.\n Let's see.\n";
+    for(int i = 0; i < 3; i++)
+    {
+      cout<<Friends[i] <<"\n";
+    }
+    cout<<"We can also output the elements with their indexes.\n";
+    for(int i = 0; i < 3; i++)
+    {
+      cout<< i <<" : "<<Friends[i] <<"\n";
+    }                                  
+      
     
   
   return 0;
