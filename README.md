@@ -69,7 +69,39 @@ int main()
     cin >> a;
     cout<<"Square root of "<< a <<" is "<< sqrt(a) <<"\n";
     cout<<"Round off of "<< a <<" is "<< round(a) <<"\n";
-    cout<<"Log of "<< a <<" is "<< log(a) <<"\n";
+    cout<<"Log of "<< a <<" is "<< log(a) <<"\n\n";
+    
+    cout<<"Let\'s jump to the switch statements. \n In this, there are many cases given but we need to specify that which code we want to execute.\n Let\'s see an example by taking an input from the user.\n";
+    int day;
+    cout<<"Enter a day number: ";
+    cin >> day;
+    switch(day)
+    {
+      case 1:
+      cout<<"Monday";
+      break;
+      case 2:
+      cout<<"Tuesday";
+      break;
+      case 3:
+      cout<<"Wednesday";
+      break; 
+      case 4:
+      cout<<"Thursday";
+      break;
+      case 5:
+      cout<<"Friday";
+      break;
+      case 6:
+      cout<<"Saturday";
+      break;
+      case 7:
+      cout<<"Sunday";
+      break;
+      default:
+      cout<<"You are a fool :)";
+    }
+      
     
     
   
