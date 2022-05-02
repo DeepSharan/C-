@@ -117,6 +117,50 @@ int main()
       cout<< i <<" : "<<Friends[i] <<"\n";
     }                                  
       
+    /*
+    #include<iostream>
+using namespace std;
+int main()
+{
+    bool ships[4][4] = {
+        {0, 0, 0, 0},
+        {1, 1, 1, 1},
+        {0, 1, 0, 1},
+        {0, 0, 1, 1}
+    };
+    int hits;
+    int turns;
+    
+    while (hits < 4)
+    {
+        int row, column;
+        cout<<"Selecting coordinates.\n";
+        cout<<"Choose a row b/w 0 & 3 : ";
+        cin>>row;
+        cout<<"Choose a column b/w 0 & 3 :  ";
+        cin>>column;
+        
+        if(ships[row][column])
+        {
+            ships[row][column] = 0;
+            hits++;
+            cout<<"Hit ! "<<(4-hits)<< " left.\n";
+            
+        }
+        else
+        {
+            cout<<"Miss!\n\n";
+        }
+        turns++;
+        
+    }
+     cout<<"You won !\n";
+     cout<<"You took "<<turns<<" to win.\n";
+     
+     return 0;
+    
+}
+    */
     
   
   return 0;
