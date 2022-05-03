@@ -5,6 +5,14 @@
 #include<string>
 #include<cmath>  
 using namespace std;
+  
+  struct specs
+    {
+      string Brand ;
+      string Model ;
+      int year ;
+    };
+  
 int main()
 {
   cout<<"We will see what is syntax of C++ Lnguage.\n";
@@ -161,6 +169,32 @@ int main()
     
 }
     */
+    cout<<"Now we\'ll see how to create and use Structures(struct).\n To create structures we use \"struct\" keyword, and declare each of its member inside curly braces.\n To access the members of structure we use dot(.) syntax.\n We can use one structure for multiple variables using commas.\n We can name the structure and use them as data types.\n Firstly, we will see one structure in multiple variables.\n ";
+    struct 
+    {
+      string name;
+      int rollNo ;
+    } 
+    student1, student2, student3;
+    
+    student1.name = "Sharandeep";
+    student1.rollNo = 21;
+    
+    student2.name = "Harsharan";
+    student2.rollNo. = 22;
+    
+    student3.name = "Ritish";
+    student3.rollNo = 23;
+    
+    cout<<student1.name<<" "<<student1.rollNo<<"\n";
+    cout<<student2.name<<" "<<student2.rollNo<<"\n";
+    cout<<student3.name<<" "<<student3.rollNo<<"\n\n";
+    
+    cout<<"Now, we\'ll see the named structures.\n REMEMBER, whenever we want to use structures as data type, we need to declare them before main funcion i.e. before the int main(). \n";
+    
+        
+      
+      
     
   
   return 0;
