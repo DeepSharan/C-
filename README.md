@@ -12,6 +12,10 @@ using namespace std;
       string Model ;
       int year ;
     };
+  void intake(string name)
+  {
+    cout<<"Hello "<<name<<"\n";
+  }
   
 int main()
 {
@@ -234,6 +238,10 @@ int main()
     cout<<" To declare a function, specify function name followed by parenthesis(), \n for example- void functionName(){ code to be executed } \n We will see further about creating functions.\n\n";
     cout<<"Declared functions are not used immediately, they are saved for later use, they are executed when they are called.\n To call a function, write the function name followed by parenthesis and a semicolon.\n";
     cout<<"C++ function consists of two parts: Declaration & Definition. \n Declaration is always before the main function, but definition can be done below the main function.\n They can be declared and defined together, but it is possible to separate them for code optimisation.\n Declaration : the return type, the name of the function, and parameters(if any) \n Definition : the body of function(code to be executed). \n\n";
+    cout<<"Info can be passed to the function as parameters. Parameters act as variables, and are declared in parenthesis. \n";
+    
+    intake("Sharandeep");
+    
     
     
         
