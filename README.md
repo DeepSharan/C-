@@ -12,9 +12,15 @@ using namespace std;
       string Model ;
       int year ;
     };
+  
   void intake(string name)
   {
     cout<<"Hello "<<name<<"\n";
+  }
+  
+  void fxn(string name, int age)
+  {
+    cout<<name<<" is "<<age<<" years old. \n";
   }
   
 int main()
@@ -90,28 +96,28 @@ int main()
     switch(day)
     {
       case 1:
-      cout<<"Monday";
+      cout<<"Monday \n";
       break;
       case 2:
-      cout<<"Tuesday";
+      cout<<"Tuesday \n";
       break;
       case 3:
-      cout<<"Wednesday";
+      cout<<"Wednesday \n";
       break; 
       case 4:
-      cout<<"Thursday";
+      cout<<"Thursday \n";
       break;
       case 5:
-      cout<<"Friday";
+      cout<<"Friday \n";
       break;
       case 6:
-      cout<<"Saturday";
+      cout<<"Saturday \n";
       break;
       case 7:
-      cout<<"Sunday";
+      cout<<"Sunday \n";
       break;
       default:
-      cout<<"You are a fool :)";
+      cout<<"You are a fool :) \n";
     }
     
     cout<<"Now we\'ll learn about Arrays.\n In the Arrays we can store number of elements of the same data type.\n Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.\n To declare an Array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store.\n Let\'s store some values in an Array.\n";
@@ -185,7 +191,7 @@ int main()
     student1.rollNo = 21;
     
     student2.name = "Harsharan";
-    student2.rollNo. = 22;
+    student2.rollNo = 22;
     
     student3.name = "Ritish";
     student3.rollNo = 23;
@@ -242,6 +248,9 @@ int main()
     
     intake("Sharandeep");
     
+    cout<<"We can also use default parameters value, by using \"=\" operator. Like, if we call the function without any argument, it uses the default value.\n Inside a function, we can use as many parameters as we want, by separating them using comma.\n \n";
+    
+    fxn("Sharandeep", 21);
     
     
         
