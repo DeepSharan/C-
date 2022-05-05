@@ -192,6 +192,50 @@ int main()
     
     cout<<"Now, we\'ll see the named structures.\n REMEMBER, whenever we want to use structures as data type, we need to declare them before main funcion i.e. before the int main(). \n";
     
+    specs car1, car2, car3;
+    car1.Brand = "BMW";
+    car1.Model = "X8";
+    car1.year = 2018;
+    
+    car2.Brand = "Mercedes";
+    car2.Model = "A6";
+    car2.year = 2019;
+    
+    car3.Brand = "Audi";
+    car3.Model = "R8";
+    car3.year = 2020;
+    
+    cout<<car1.Brand<<" "<<car1.Model<<" \n";
+    cout<<car2.Brand<<" "<<car2.Model<<" \n";
+    cout<<car3.Brand<<" "<<car3.Model<<" \n\n";
+    
+    cout<<" \"References\" variable is reference to an existing variable, declared by & operator.\n";
+    string food = "Burger";
+    string &meal = food;
+    cout<<"Either we can use food or meal to output burger. \n";
+    cout<<food<<" \n";
+    cout<<meal<<"\n\n";
+    
+    cout<<"& Operator can also be used to get the memory address of the variable, i.e. which is the location of where the variable is stored on computer.\n";
+    cout<< &food<<"\n\n";
+    
+    cout<<"Pointers store the memory address as its value.";
+    
+    string *ptr = &food;
+    cout<< ptr<<"\n\n";
+    cout<<"Remember, * can be confusing.\n As, when \" * \" used in declaration, it creates pointer variable.\n When not used in declaration, it acts as dereference operator. \n\n As we see below: \n";
+    cout<< *ptr<<"\n";
+    cout<<"Modify pointers: \n";
+    *ptr = "Pizza";
+    cout<< *ptr <<"\n";
+    cout<< food <<"\n\n";
+    
+    cout<<"We\'ll learn about the C++ functions. \n\n";
+    cout<<" To declare a function, specify function name followed by parenthesis(), \n for example- void functionName(){ code to be executed } \n We will see further about creating functions.\n\n";
+    cout<<"Declared functions are not used immediately, they are saved for later use, they are executed when they are called.\n To call a function, write the function name followed by parenthesis and a semicolon.\n";
+    cout<<"C++ function consists of two parts: Declaration & Definition. \n Declaration is always before the main function, but definition can be done below the main function.\n They can be declared and defined together, but it is possible to separate them for code optimisation.\n Declaration : the return type, the name of the function, and parameters(if any) \n Definition : the body of function(code to be executed). \n\n";
+    
+    
         
       
       
