@@ -20,8 +20,33 @@ using namespace std;
   
   void fxn(string name, int age)
   {
-    cout<<name<<" is "<<age<<" years old. \n";
+    cout<<name<<" is "<<age<<" years old. \n\n";
   }
+  
+  int add(int x, int y)
+  {
+    return x + y;
+  }
+  
+  void swap(int &x, int &y)
+  {
+    int z = x;
+    x = y;
+    y = z;
+  }
+  
+   int sume(int k)
+  {
+      if (k > 0)
+      {
+          return k + sume(k - 1);
+      }
+      else
+      {
+          return 0;
+      }   
+  }
+  
   
 int main()
 {
@@ -251,6 +276,37 @@ int main()
     cout<<"We can also use default parameters value, by using \"=\" operator. Like, if we call the function without any argument, it uses the default value.\n Inside a function, we can use as many parameters as we want, by separating them using comma.\n \n";
     
     fxn("Sharandeep", 21);
+    
+    cout<<"The void keyword indicates that the function does not return any value, but if you want your function to return any value, then use a data type (string, int, etc.), instead of void and use return keyword inside the function.\n";
+    
+    cout<< add(5, 10);
+    
+    cout<<"You can also store the results in a variable.";
+    int z = add(5, 5);
+    cout<< z <<"\n";
+    cout<<"Now we will see swaping of numbers by storing reference value in the function, this can help changing the value of arguements.\n\n";
+    
+    int num1;
+    cout<<"Input a number: ";
+    cin >> num1;
+    cout <<"Input another number: ";
+    int num2;
+    cin>> num2;
+    
+    cout<< "Before swap: \n";
+    cout<<num1<<num2<<"\n";
+    
+    swap(num1, num2);
+    
+    cout<<"After swap: \n";
+    cout<<num1<<num2<<"\n\n";
+    
+    cout<<"RECURSION, it is technique when function calls itself.\n\n";
+    int result = sume(10);
+    cout<< result;
+    
+    
+    
     
     
         
