@@ -14,6 +14,21 @@ class Fruits
     int qty;
     
 };
+ 
+ class Bike
+{
+    public:
+    string brand;
+    string model;
+    int year;
+    
+    Bike(string x, string y, int z)
+    {
+        brand = x;
+        model = y;
+        year = z;
+    }
+};   
   
   struct specs
     {
@@ -316,7 +331,7 @@ int main()
     
     cout<<"CLASSES, C++ is all about classes and objects, that contain both data and functions.\n We will see how to create classes and objects, but first we will learn what are classes and how they are used.\n";
     cout<<"Everything in C++ is associated with classes and objects, along with its attributes and methods.\n For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.\n\n Attributes and methods are variables and functions that belong to class, and are often referred as \'Class Members\'.\n A CLASS is user-defined data type that is often used as object constructor.\n\n To create a class use \'class\' keyword followed by class name, and start with curly braces, use the \'public\' keyword followed by colons, it is an access specifier, which specifies that the class members can be accessed from the outside the class, then start with writing the attributes of the class.\n\n";
-    cout<<"Now we move on to creating the Objects.\n So, basically classes are templates for the objects, and the Objects are instances of Classes.\n When the Objects are created, they inherit all the variables and functions from the class.\n In C++, Object is created from a Class.\n\n To create an object of class, specify the \'className\' followed by \'ObjectName\'.
+    cout<<"Now we move on to creating the Objects.\n So, basically classes are templates for the objects, and the Objects are instances of Classes.\n When the Objects are created, they inherit all the variables and functions from the class.\n In C++, Object is created from a Class.\n\n To create an object of class, specify the \'className\' followed by \'ObjectName\'.";
     
     Fruits Obj1, Obj2;
     
@@ -375,11 +390,89 @@ int main()
     }
 */
     
+    cout<<"CONSTRUCTORS \n A Constructor in C++ is a Special Method which is automatically called when an object is created.\n To create a class, same name is used followed by parentheses.\n The constructor has the same name as the class, it is always public, and it does not have any return value.\n Constructors can take parameters just like regular functions.\n";
+/*
+  class Bike
+  {
+    public:
+    string brand;
+    string model;
+    int year;
     
-        
-      
-      
+    Bike(string x, string y, int z)
+    {
+        brand = x;
+        model = y;
+        year = z;
+    }
+   };
+*/
+   Bike object1("Yamaha", "R15", 2020);
+   Bike object2("BMW", "Ace", 2019);
     
+    cout<<object1.brand<<" "<<object1.model<<" "<<object1.year<<"\n";
+    cout<<object2.brand<<" "<<object2.model<<" "<<object2.year<<"\n\n";
+      
+    cout<<"ACCESS SPECIFIER \n They define how the members of the Class can be accessed. \n These are three types - \n 1. public: \n 2. private: \n 3. protected: \n\n";
+    cout<<"ENCAPSULATION \n The meaning of encapsulation is to ensure that the data is hidden from the users.\n To achieve this, you must keep the class members private & to access them use the public \"get\" and \"set\" methods.\n\n";
+    /*
+    class Emp
+    {
+      private:
+      int salary;
+    
+      public:
+      void setpay(int s)
+      {
+        salary = s;
+      }
+      int getpay()
+      {
+        return salary;
+      }
+    
+    };
+    int main()
+    {
+      Emp Deep;
+      Deep.setpay(70000);
+      Deep.getpay();
+      cout<<"Salary of an Employee is "<<Deep.getpay()<<". \n\n";
+    
+      return 0;
+     }
+     */
+     
+     cout<<"INHERITANCE \n It is possible to inherit attributes and methods from one class to another using \':\' symbol.\n We group the inheritance concept into two categories: \n Parent Class. \t \t \t Child Class." ;
+    /*
+     class Vehicle
+    {
+      public:
+      string brand;
+      void honk()
+      {
+        cout<<"Pomm..Pomm !\n";
+      }
+    };
+    class Car: public Vehicle
+    {
+      public:
+      string model = "Cruze.";
+    };
+    int main()
+    {
+      Car car1;
+      car1.brand = "Chevrolet";
+      car1.honk();
+    
+      cout<<"My Car "<<car1.brand<<" "<<car1.model<<"\n";
+    
+     return 0;
+     }          
+     */                                                    
+ 
+     cout<<"MULTILEVEL INHERITANCE \n In this, we can derive class from the other class, which is already derived from another class, with the same process of using \':\' symbol.\n";
+     cout<<"MULTIPLE INHERITANCE \n In this, we can derive a class from more than one parent classes, just by separating them with comma.\n";       
   
   return 0;
 }
