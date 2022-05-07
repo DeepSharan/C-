@@ -5,6 +5,15 @@
 #include<string>
 #include<cmath>  
 using namespace std;
+
+class Fruits
+{
+    public: 
+    string name;
+    string color;
+    int qty;
+    
+};
   
   struct specs
     {
@@ -303,8 +312,26 @@ int main()
     
     cout<<"RECURSION, it is technique when function calls itself.\n\n";
     int result = sume(10);
-    cout<< result;
+    cout<< result <<"\n\n";
     
+    cout<<"CLASSES, C++ is all about classes and objects, that contain both data and functions.\n We will see how to create classes and objects, but first we will learn what are classes and how they are used.\n";
+    cout<<"Everything in C++ is associated with classes and objects, along with its attributes and methods.\n For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.\n\n Attributes and methods are variables and functions that belong to class, and are often referred as \'Class Members\'.\n A CLASS is user-defined data type that is often used as object constructor.\n\n To create a class use \'class\' keyword followed by class name, and start with curly braces, use the \'public\' keyword followed by colons, it is an access specifier, which specifies that the class members can be accessed from the outside the class, then start with writing the attributes of the class.\n\n";
+    cout<<"Now we move on to creating the Objects.\n So, basically classes are templates for the objects, and the Objects are instances of Classes.\n When the Objects are created, they inherit all the variables and functions from the class.\n In C++, Object is created from a Class.\n\n To create an object of class, specify the \'className\' followed by \'ObjectName\'.
+    
+    Fruits Obj1, Obj2;
+    
+    Obj1.name = "Mango";
+    Obj1.color = "Yellow";
+    Obj1.qty = 3;
+    
+    Obj2.name = "Banana";
+    Obj2.color = "Red";
+    Obj2.qty = 5;
+    
+    cout<<Obj1.qty<<" "<<Obj1.name<<" of "<<Obj1.color<<" colour.\n";
+    cout<<Obj2.qty<<" "<<Obj2.name<<" of "<<Obj2.color<<" colour.\n\n";
+    
+    cout<<"CLASS METHODS - \n Basically, methods are functions that belongs to the class.\n There are two ways to define a function - \n 1. Inside the Class. \n 2. Outside the Class.                                                    
     
     
     
