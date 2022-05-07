@@ -331,9 +331,49 @@ int main()
     cout<<Obj1.qty<<" "<<Obj1.name<<" of "<<Obj1.color<<" colour.\n";
     cout<<Obj2.qty<<" "<<Obj2.name<<" of "<<Obj2.color<<" colour.\n\n";
     
-    cout<<"CLASS METHODS - \n Basically, methods are functions that belongs to the class.\n There are two ways to define a function - \n 1. Inside the Class. \n 2. Outside the Class.                                                    
+    cout<<"CLASS METHODS - \n Basically, methods are functions that belongs to the class.\n We can also add parameters to the functions.\n There are two ways to define a function - \n 1. Inside the Class. \n 2. Outside the Class. \n First, we will see Function Inside the Class.";  
+/*
+    class Fruits
+    {
+      public: 
+     
+      void Method1()
+      {
+         cout<<"Gonna Execute ! \n";
+      }
+    };
+
+    int main()
+    {
+      Fruits obj;
+      obj.Method1();
     
+      return 0;
+    }
+*/
     
+    cout<<"Outside the Class.\n ";
+/*
+    class Fruits
+    {
+      public: 
+     
+       int Method2(int mango);
+
+    };
+    int Fruits::Method2(int mango)
+    {
+      return mango;
+    }
+
+    int main()
+    {
+      Fruits obj;
+      cout<<obj.Method2(5);
+    
+      return 0;
+    }
+*/
     
     
         
