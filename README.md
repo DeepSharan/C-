@@ -472,7 +472,63 @@ int main()
      */                                                    
  
      cout<<"MULTILEVEL INHERITANCE \n In this, we can derive class from the other class, which is already derived from another class, with the same process of using \':\' symbol.\n";
-     cout<<"MULTIPLE INHERITANCE \n In this, we can derive a class from more than one parent classes, just by separating them with comma.\n";       
-  
+     cout<<"MULTIPLE INHERITANCE \n In this, we can derive a class from more than one parent classes, just by separating them with comma.\n\n";    
+     
+     cout<<"POLYMORPHISM \n Polymorphism means \'many forms\' and it occurs when two or more classes are related to each other by inheritance.\n Polymorphism uses inherited methods to perform different tasks.\n This allows us to perform single action in different ways.\n\n";
+      
+      /*
+      class Animals
+      {
+        public:
+        void sound()
+        {
+           cout<<"Animals make the sound..\n";
+        }
+      };
+      class Dog: public Animals
+      {
+        public:
+        void sound()
+        {
+          cout<<"Dog barks - bow vow !\n";
+        }
+      };
+      class Cat: public Animals
+      {
+        public:
+        void sound()
+        {
+          cout<<"Cat - meow meow !\n";
+        }
+      };
+
+      class Pig: public Animals
+      {
+        public:
+        void sound()
+        {
+            cout<<"Pig - wee wee !\n";
+        }
+      };
+
+
+      int main()
+      {
+        Animals myanimals;
+        Dog mydog;
+        Cat mycat;
+        Pig mypig;
+    
+        myanimals.sound();
+        mydog.sound();
+        mycat.sound();
+        mypig.sound();
+    
+        return 0;
+      }
+     */
+      
+      
+      
   return 0;
 }
